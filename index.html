@@ -14,13 +14,13 @@
             position: relative;
             width: 100vw;
             height: 100vh;
-            background: #2a0a0a url('img/bg2.jpg') center center / cover no-repeat;
+            background: #2a0a0a url('img/bg2.jpg') center center / contain no-repeat;
         }
         #yes-btn {
             position: absolute;
             bottom: 10vh;
             left: calc(50% - 290px);
-            width: 260px;
+            width: clamp(140px, 20vw, 260px);
             cursor: pointer;
             transition: transform 0.1s;
         }
@@ -29,7 +29,7 @@
             position: absolute;
             bottom: 10vh;
             left: calc(50% + 30px);
-            width: 260px;
+            width: clamp(140px, 20vw, 260px);
             cursor: pointer;
         }
     </style>
