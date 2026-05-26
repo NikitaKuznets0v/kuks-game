@@ -11,26 +11,22 @@
             position: relative;
             width: 100vw;
             height: 100vh;
-            background: #2a0a0a url('img/bg1.jpg') center center / contain no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background: #1a0505 url('img/bg_final.jpg') center center / contain no-repeat;
         }
-        .btn-enter {
-            width: clamp(200px, 38vw, 480px);
-            cursor: pointer;
-            transition: transform 0.15s ease;
-        }
-        .btn-enter:hover {
-            transform: scale(1.04);
+        .corner-video {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            width: clamp(160px, 25vw, 360px);
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
     <div class="page">
-        <a href="https://ya.ru" target="_blank" rel="noopener">
-            <img class="btn-enter" src="img/btn1.png" alt="Вступить в мероприятие">
-        </a>
+        <video class="corner-video" autoplay loop muted playsinline>
+            <source src="img/final_gif.mp4" type="video/mp4">
+        </video>
     </div>
 </body>
 </html>
